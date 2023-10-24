@@ -7,6 +7,10 @@ import "./style.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <FirstApp subtitle="I am engineer agricultural" age={30} />
+    <FirstApp
+      title="Hi! I am Nazly Zambrano Hendez"
+      subtitle="I am engineer agricultural"
+      age={30}
+    />
   </React.StrictMode>
 );
