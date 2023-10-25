@@ -7,17 +7,21 @@ export const CounterApp = ({ value }) => {
   const handleAdd = () => {
     setCounter(counter + 1);
   };
-  const handleDelete = () => {
+  const handleSubstract = () => {
     setCounter(counter - 1);
+  };
+  const handleReset = () => {
+    setCounter(value);
   };
   return (
     <>
       <h1>Counter App</h1>
       <div className="counter">
-        <button onClick={handleDelete}>-</button>
+        <button onClick={handleSubstract}>-</button>
         <h2> {counter} </h2>
         <button onClick={handleAdd}>+</button>
       </div>
+      <button onClick={handleReset}>Reiniciar</button>
     </>
   );
 };
